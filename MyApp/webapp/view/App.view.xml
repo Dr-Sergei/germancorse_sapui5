@@ -1,10 +1,12 @@
 <mvc:View displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m" controllerName="opensap.myapp.controller.App">
     <Carousel>
         <pages>
             <Image src="../images/2.png" height="600px"/>
             <Image src="../images/3.png"/>
         </pages>
+
     </Carousel>
+    <Button text="Press me" press="onShowSmth"></Button>
 </mvc:View>
