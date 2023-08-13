@@ -1,12 +1,26 @@
-<mvc:View displayBlock="true"
+<mvc:View
+    displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m" controllerName="opensap.myapp.controller.App">
+    xmlns="sap.m"
+    controllerName="opensap.myapp.controller.App"
+>
     <Carousel>
         <pages>
-            <Image src="../images/2.png" height="600px"/>
-            <Image src="../images/3.png"/>
+            <Image
+                src="../images/2.png"
+                height="600px"
+            />
+            <Image src="../images/3.png" />
         </pages>
-
     </Carousel>
-    <Button text="Press me" press="onShowSmth"></Button>
+    <Button
+        text="showHelloButtonText"
+        press="onShowSmth"
+    />
+    <Input
+        value="{helloPanel>/recipient/name}"
+        description="{helloPanel>/recipient/name}"
+        valueLiveUpdate="true"
+        width="60%"
+    />
 </mvc:View>
