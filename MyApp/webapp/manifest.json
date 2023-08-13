@@ -29,6 +29,10 @@
       "id": "app"
     },
     "models": {
+      "address": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/Address.json"
+      },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
