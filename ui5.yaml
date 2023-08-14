@@ -1,0 +1,16 @@
+specVersion: "3.0"
+metadata:
+  name: myapp
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        backend:
+          - path: /sap
+            url: https://sapes5.sapdevcenter.com/
+resources:
+  configuration:
+    paths:
+      webapp: webapp
